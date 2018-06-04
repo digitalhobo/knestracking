@@ -13,17 +13,19 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
+import Auth from 'containers/Auth/Loadable';
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import { Background } from './style';
 
 export default function App() {
   return (
-    <div>
+    <Background>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={Auth} />
+        <Route exact path="/dashboard" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
-    </div>
+    </Background>
   );
 }

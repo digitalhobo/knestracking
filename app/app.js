@@ -14,6 +14,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
+
 import 'sanitize.css/sanitize.css';
 
 // Import root app
@@ -60,7 +61,7 @@ const render = (messages) => {
         </ConnectedRouter>
       </LanguageProvider>
     </Provider>,
-    MOUNT_NODE
+    MOUNT_NODE,
   );
 };
 
