@@ -27,4 +27,19 @@ injectGlobal`
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
+  input:-webkit-autofill, 
+  textarea:-webkit-autofill, 
+  select:-webkit-autofill,
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus
+  input:-webkit-autofill, 
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus{
+    background-color: white!important;
+  }
 `;

@@ -28,6 +28,7 @@
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
     "start:production": "npm run build && npm run start:prod",
     "start:prod": "cross-env NODE_ENV=production node server",
+    "pm2": "pm2 stop knestracking && yarn build && pm2 start ./server/index.js NODE_ENV=production -i 0 --name knestracking --watch",
     "presetup": "npm i chalk shelljs",
     "setup": "node ./internals/scripts/setup.js",
     "postsetup": "npm run build:dll",
